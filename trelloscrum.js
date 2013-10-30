@@ -21,7 +21,7 @@
 /*jshint browser: true, jquery:true */
 
 //default story point picker sequence
-var _pointSeq = ['?', 0, .5, 1, 2, 3, 5, 8, 13, 21];
+var _pointSeq = ['?', 0, .5, 1, 2, 3, 5, 8, 13, 20];
 
 // Difference story point picker sequence
 var _diffSeq = [-5, -3, -2, -1, 0, 1, 2, 3, 4, 5];
