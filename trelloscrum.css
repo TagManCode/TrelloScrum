@@ -96,3 +96,25 @@
 	font-size: 110%;
 	font-weight: bold;
 }
+
+.backlog-link {
+	border-radius: 3px;
+	cursor: default;
+	float: left;
+	font-size: 12px;
+	height: 30px;
+	line-height: 32px;
+	margin: 0 4px 0 0;
+	max-width: 400px;
+	overflow: hidden;
+	padding: 0 8px;
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.backlog-link:hover {
+	background: #dcdcdc;
+	color: #111;
+	cursor: pointer;
+}

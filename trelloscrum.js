@@ -30,6 +30,9 @@ var _diffSeq = [-5, -3, -2, -1, 0, 1, 2, 3, 4, 5];
 //attributes representing points values for card
 var _pointsAttr = ['points', 'cpoints'];
 
+// Location of the backlog board.
+var _backlogBoardLocation = "OBFUSCATED";
+
 
 //internals
 var reg = /((?:^|\s))\((\x3f|\d*\.?\d+)(\))\s?/m, //parse regexp- accepts digits, decimals and '?', surrounded by ()
@@ -54,7 +57,19 @@ $(function(){
 
 	calcListPoints();
 
+	// Add link to the backlog board to the top.
+	addBacklogLink();
+
 });
+
+function addBacklogLink() {
+
+	console.log('foobar3');
+
+	$('<a href="' + _backlogBoardLocation + '" target="_blank" class="backlog-link quiet">Backlog</a>')
+		.insertAfter('#board-header .perms-btn')
+	;
+}
 
 document.body.addEventListener('DOMNodeInserted',function(e){
 	if(e.target.id=='board') setTimeout(calcListPoints);
