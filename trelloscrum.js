@@ -15,6 +15,7 @@
 ** Cedric Gatay <https://github.com/CedricGatay>
 ** Kit Glennon <https://github.com/kitglen>
 ** Samuel Gaus <https://github.com/gausie>
+** Shaun Donnelly <https://github.com/shaundon>
 **
 */
 /*global chrome */
