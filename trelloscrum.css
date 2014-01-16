@@ -1,18 +1,18 @@
-span.card-short-id.hide {
-	display: inline;
-	font-weight: bold;
-}
-
 .list-total {
 	color: #006580;
 	font-size: 16px;
 	font-weight: bold;
 	float: right;
 	margin: 1px 0px 0 0;
+	line-height:18px;
+}
+.board-header-btns .list-total{ /* only targets the board totals */
+	line-height:30px;
+	color: #60c5f0;
 }
 
 .list-total .cpoints{
-	margin-left: 3px;
+	margin-left:3px;
 	opacity: 0.5;
 }
 
@@ -43,19 +43,7 @@ span.card-short-id.hide {
 
 .picker {
 	float: right;
-	min-width: 350px;
 	padding-top: 5px;
-}
-
-.picker > span:first-of-type {
-	display: inline-block;
-	margin-right: 5px;
-	text-align: left;
-	width: 80px;
-}
-
-.consumed.picker {
-	padding-top: 0;
 }
 
 .points-done-icon{
@@ -82,44 +70,13 @@ span.card-short-id.hide {
 	display: none;
 }
 
-.badge-points.consumed, .consumed .point-value{
+.badge-points.consumed{
 	opacity: 0.5;
 }
 
-.story-points-help {
-	border-bottom: 1px solid #ccc;
-	border-top: 1px solid #ccc;
-	clear: both;
-	margin: 0 auto;
-	margin-top: 30px;
-	padding: 10px;
-	width: 85%;
+/* == b4t integration==*/
+#burndownLink .icon-sm{
+    padding:6px;
+    margin-top:1px;
 }
-
-.story-points-help .title {
-	color: #666;
-	font-size: 110%;
-	font-weight: bold;
-}
-
-.backlog-link {
-	border-radius: 3px;
-	cursor: default;
-	float: left;
-	font-size: 12px;
-	height: 30px;
-	line-height: 32px;
-	margin: 0 4px 0 0;
-	max-width: 400px;
-	overflow: hidden;
-	padding: 0 8px;
-	position: relative;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.backlog-link:hover {
-	background: #dcdcdc;
-	color: #111;
-	cursor: pointer;
-}
+/* == end b4t integration == */
